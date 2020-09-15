@@ -2,7 +2,7 @@ name: VueDoc to Aliyun
 
 on:
   push:
-    branches: [ master ]
+    branches: [ ci ]
 
 jobs:
   build:
