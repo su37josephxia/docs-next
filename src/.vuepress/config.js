@@ -214,7 +214,7 @@ module.exports = {
     [
       'script',
       {
-        src: 'https://player.vimeo.com/api/player.js'
+        // src: 'https://player.vimeo.com/api/player.js'
       }
     ],
     [
