@@ -1,0 +1,21 @@
+name: Auto_Fetch
+
+on:
+  schedule:
+    - cron: '0 0 * * *
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    # 下载代码
+    - uses: actions/checkout@v2
+    # 自动fetch
+    - name: Fetch from vuejs/docs-next.git
+      # 运行的命令或者 action
+      run: |
+        git remote add upstream git@github.com:vuejs/docs-next.git
+        git fetch upstream master
+        git merge upstream/master
+        git push
+
