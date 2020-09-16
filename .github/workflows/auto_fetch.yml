@@ -1,7 +1,7 @@
 name: Auto_Fetch
-
-schedule:
-  - cron: '0 0 * * *'
+on:
+  schedule:
+    - cron: '0 0 * * *'
 
 defaults:
   run:
