@@ -27,7 +27,7 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
         ARGS: "-avzr --delete"
-        SOURCE: "src/.vuepress/dist"
+        SOURCE: "src/.vuepress/dist/*"
         REMOTE_HOST: "47.98.252.43"
         REMOTE_USER: "root"
         TARGET: "/root/public/vue-docs-next"
